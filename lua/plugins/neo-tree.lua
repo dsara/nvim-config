@@ -15,6 +15,7 @@ return {
 				},
 				filtered_items = {
 					hide_dotfiles = false,
+					hide_gitignored = true,
 				},
 				use_libuv_file_watcher = true,
 			},
