@@ -35,8 +35,12 @@ return {
 				capabilities = capabilities,
 			})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+			vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "LSP Signature help" })
 			vim.keymap.set("n", "gD", vim.lsp.buf.definition, {})
+			vim.keymap.set("n", "gd", vim.lsp.buf.declaration, { desc = "LSP go to Declaration" })
+			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "LSP go to implementation" })
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP Rename" })
 		end,
 	},
 }
