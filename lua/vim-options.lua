@@ -34,12 +34,12 @@ vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", { noremap = true, desc = "Resi
 vim.keymap.set(
 	"n",
 	"<C-Left>",
-	":vertical resize -2<CR>",
+	":vertical resize +2<CR>",
 	{ noremap = true, desc = "Resize window left", silent = true }
 )
 vim.keymap.set(
 	"n",
 	"<C-Right>",
-	":vertical resize +2<CR>",
+	":vertical resize -2<CR>",
 	{ noremap = true, desc = "Resize window right", silent = true }
 )
