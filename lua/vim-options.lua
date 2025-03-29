@@ -20,10 +20,26 @@ vim.keymap.set("n", "<leader>wl", "<C-w>l", { silent = true })
 vim.keymap.set("n", "<leader>wj", "<C-w>j", { silent = true })
 vim.keymap.set("n", "<leader>wk", "<C-w>k", { silent = true })
 
--- Tab navigation
-vim.keymap.set("n", "<A-h>", ":tabprevious<CR>", { silent = true })
-vim.keymap.set("n", "<A-l>", ":tabnext<CR>", { silent = true })
+-- Tab creation and  navigation
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { silent = true, desc = "New Tab" })
+vim.keymap.set("n", "<leader>th", ":tabprevious<CR>", { silent = true, desc = "Previous Tab" })
+vim.keymap.set("n", "<leader>tl", ":tabnext<CR>", { silent = true, desc = "Next Tab" })
+vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { silent = true, desc = "Close Tab" })
 
--- Window splitting
-vim.keymap.set("n", "<leader>ws", ":split<CR>", { desc = "Horizontal split", noremap = true })
-vim.keymap.set("n", "<leader>wv", ":vsplit<CR>", { desc = "Vertical split", noremap = true })
+-- Window management
+vim.keymap.set("n", "<leader>ws", ":split<CR>", { desc = "Horizontal split", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>wv", ":vsplit<CR>", { desc = "Vertical split", noremap = true, silent = true })
+vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", { noremap = true, desc = "Resize window up", silent = true })
+vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", { noremap = true, desc = "Resize window down", silent = true })
+vim.keymap.set(
+	"n",
+	"<C-Left>",
+	":vertical resize -2<CR>",
+	{ noremap = true, desc = "Resize window left", silent = true }
+)
+vim.keymap.set(
+	"n",
+	"<C-Right>",
+	":vertical resize +2<CR>",
+	{ noremap = true, desc = "Resize window right", silent = true }
+)
