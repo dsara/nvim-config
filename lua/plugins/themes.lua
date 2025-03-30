@@ -10,8 +10,9 @@ return {
 				terminal = false,
 				overrides = {},
 			})
-			-- vim.cmd.colorscheme "ayu"
+			vim.cmd.colorscheme("ayu")
 		end,
+		enabled = false,
 	},
 	{
 		"catppuccin/nvim",
@@ -35,5 +36,16 @@ return {
 			})
 			vim.cmd.colorscheme("catppuccin")
 		end,
+		enabled = true,
+	},
+	{
+		"nyoom-engineering/oxocarbon.nvim",
+		priority = 1000,
+		layz = false,
+		config = function()
+			vim.opt.background = "dark"
+			vim.cmd.colorscheme("oxocarbon")
+		end,
+		enabled = false,
 	},
 }
