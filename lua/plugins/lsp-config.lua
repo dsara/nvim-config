@@ -34,13 +34,13 @@ return {
 			lspconfig.jsonls.setup({
 				capabilities = capabilities,
 			})
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "LSP Signature help" })
-			vim.keymap.set("n", "gD", vim.lsp.buf.definition, {})
-			vim.keymap.set("n", "gd", vim.lsp.buf.declaration, { desc = "LSP go to Declaration" })
-			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "LSP go to implementation" })
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
-			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP Rename" })
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Signature info (LSP)" })
+			vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "Signature help (LSP)" })
+			vim.keymap.set("n", "gD", vim.lsp.buf.definition, { desc = "Goto definition (LSP)" })
+			vim.keymap.set("n", "gd", vim.lsp.buf.declaration, { desc = "Goto declaration (LSP)" })
+			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Goto Implementation (LSP)" })
+			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions (LSP)" })
+			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename (LSP)" })
 		end,
 	},
 }

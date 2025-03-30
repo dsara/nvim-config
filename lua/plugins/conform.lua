@@ -15,6 +15,6 @@ return {
 		})
 		vim.keymap.set("n", "<leader>cf", function()
 			require("conform").format({ async = true })
-		end, { desc = "Format current buffer with conform" })
+		end, { desc = "Format buffer (conform)" })
 	end,
 }

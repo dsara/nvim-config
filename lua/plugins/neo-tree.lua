@@ -20,9 +20,29 @@ return {
 				use_libuv_file_watcher = true,
 			},
 		})
-		vim.keymap.set("n", "<leader>nt", ":Neotree filesystem<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "<leader>ns", ":Neotree git_status<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "<leader>nc", ":Neotree close<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "<leader>nb", ":Neotree buffers<CR>", { noremap = true, silent = true })
+		vim.keymap.set(
+			"n",
+			"<leader>nt",
+			":Neotree filesystem<CR>",
+			{ noremap = true, silent = true, desc = "Show filesystem (neotree)" }
+		)
+		vim.keymap.set(
+			"n",
+			"<leader>ns",
+			":Neotree git_status<CR>",
+			{ noremap = true, silent = true, desc = "Show git status (neotree)" }
+		)
+		vim.keymap.set(
+			"n",
+			"<leader>nc",
+			":Neotree close<CR>",
+			{ noremap = true, silent = true, desc = "Close neotree" }
+		)
+		vim.keymap.set(
+			"n",
+			"<leader>nb",
+			":Neotree buffers<CR>",
+			{ noremap = true, silent = true, desc = "Show buffers (neotree)" }
+		)
 	end,
 }
