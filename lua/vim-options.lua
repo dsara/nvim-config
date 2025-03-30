@@ -14,11 +14,11 @@ vim.keymap.set("n", "<leader>qq", ":qa<CR>", {})
 -- Remove highlights until next search
 vim.keymap.set("n", "<leader>hh", ":nohlsearch<CR>", { silent = true, desc = "Remove search highlight" })
 
--- Quick window move activation -- moved to which-key plugin
--- vim.keymap.set("n", "<leader>wh", "<C-w>h", { silent = true })
--- vim.keymap.set("n", "<leader>wl", "<C-w>l", { silent = true })
--- vim.keymap.set("n", "<leader>wj", "<C-w>j", { silent = true })
--- vim.keymap.set("n", "<leader>wk", "<C-w>k", { silent = true })
+-- Quick window move activation
+vim.keymap.set("n", "<leader>wh", "<C-w>h", { silent = true, desc = "Window move left" })
+vim.keymap.set("n", "<leader>wl", "<C-w>l", { silent = true, desc = "Window move right" })
+vim.keymap.set("n", "<leader>wj", "<C-w>j", { silent = true, desc = "Window move down" })
+vim.keymap.set("n", "<leader>wk", "<C-w>k", { silent = true, desc = "Window move up" })
 
 -- Tab creation and  navigation
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { silent = true, desc = "New Tab" })
@@ -27,9 +27,8 @@ vim.keymap.set("n", "<leader>tl", ":tabnext<CR>", { silent = true, desc = "Next 
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { silent = true, desc = "Close Tab" })
 
 -- Window management
--- moved to which-key plugin
--- vim.keymap.set("n", "<leader>ws", ":split<CR>", { desc = "Horizontal split", noremap = true, silent = true })
--- vim.keymap.set("n", "<leader>wv", ":vsplit<CR>", { desc = "Vertical split", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ws", ":split<CR>", { desc = "Horizontal split", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>wv", ":vsplit<CR>", { desc = "Vertical split", noremap = true, silent = true })
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", { noremap = true, desc = "Resize window up", silent = true })
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", { noremap = true, desc = "Resize window down", silent = true })
 vim.keymap.set(
