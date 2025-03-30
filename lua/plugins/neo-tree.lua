@@ -14,7 +14,7 @@ return {
 					leave_dirs_open = true,
 				},
 				filtered_items = {
-					hide_dotfiles = false,
+					hide_dotfiles = true,
 					hide_gitignored = true,
 				},
 				use_libuv_file_watcher = true,
