@@ -6,6 +6,6 @@ return {
 		"nvim-telescope/telescope.nvim",
 	},
 	config = function()
-		vim.keymap.set("n", "<leader>ng", ":Neogit<CR>", { desc = "Opens neogit", silent = true })
+		vim.keymap.set("n", "<leader>gn", ":Neogit<CR>", { desc = "Opens neogit", silent = true })
 	end,
 }
