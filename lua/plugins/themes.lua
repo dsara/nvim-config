@@ -36,7 +36,7 @@ return {
 			})
 			vim.cmd.colorscheme("catppuccin")
 		end,
-		enabled = true,
+		enabled = false,
 	},
 	{
 		"nyoom-engineering/oxocarbon.nvim",
@@ -47,5 +47,48 @@ return {
 			vim.cmd.colorscheme("oxocarbon")
 		end,
 		enabled = false,
+	},
+	{
+		"bluz71/vim-moonfly-colors",
+		name = "moonfly",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.cmd.colorscheme("moonfly")
+		end,
+		enabled = false,
+	},
+	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+		config = function()
+			vim.cmd.colorscheme("rose-pine")
+		end,
+		enabled = false,
+	},
+	{
+		"embark-theme/vim",
+		name = "emabark",
+		lazy = false,
+		config = function()
+			vim.cmd.colorscheme("embark")
+		end,
+		enabled = false,
+	},
+	{
+		"sam4llis/nvim-tundra",
+		name = "tundra",
+		lazy = false,
+		config = function()
+			vim.g.tundra_biome = "arctic"
+			vim.opt.background = "dark"
+			vim.cmd.colorscheme("tundra")
+		end,
+		enabled = true,
+	},
+	{
+		"EdenEast/nightfox.nvim",
+		lazy = false,
+		enabled = true,
 	},
 }
