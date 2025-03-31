@@ -11,6 +11,8 @@ vim.keymap.set("v", "<Space>", "<Nop>", { silent = true })
 -- Fast quit
 vim.keymap.set("n", "<leader>qq", ":qa<CR>", {})
 
+vim.keymap.set("n", "<leader>xe", vim.diagnostic.open_float, { desc = "Show floating diagnostic" })
+
 -- Remove highlights until next search
 vim.keymap.set("n", "<leader>hh", ":nohlsearch<CR>", { silent = true, desc = "Remove search highlight" })
 
