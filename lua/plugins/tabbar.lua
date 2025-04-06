@@ -21,5 +21,5 @@ return {
 	end,
 	opts = {},
 	version = "^1.0.0",
-	enabled = true,
+	enabled = false,
 }
