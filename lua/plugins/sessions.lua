@@ -52,4 +52,15 @@ return {
 			require("mini.sessions").setup()
 		end,
 	},
+	{
+		"folke/persistence.nvim",
+		event = "BufReadPre",
+		opts = {},
+		config = function()
+			vim.keymap.set("n", "<leader>qS", function()
+				require("persistence").load()
+			end, { noremap = true, silent = true, desc = "Load session for directory (persistence)" })
+		end,
+		enable = false,
+	},
 }
