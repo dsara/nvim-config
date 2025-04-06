@@ -30,7 +30,7 @@ return {
 
 		vim.keymap.set(
 			"n",
-			",nh",
+			"<leader>nh",
 			"<cmd>NoiceHistory<cr>",
 			{ noremap = true, silent = true, desc = "Notication history (noice)" }
 		)
