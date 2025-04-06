@@ -13,6 +13,16 @@ return {
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live file grep (telescope)" })
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find buffers (telescope)" })
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help (telescope)" })
+			vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "Find symbols (telescope)" })
+			vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Find word under cursor (telescope)" })
+			vim.keymap.set("n", "<leader>fgc", builtin.git_commits, { desc = "Search git commits (telescope)" })
+			vim.keymap.set(
+				"n",
+				"<leader>fgb",
+				builtin.git_bcommits,
+				{ desc = "Search git commits for Buffer (telescope)" }
+			)
+			vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find keymaps (telescope)" })
 		end,
 	},
 	{
