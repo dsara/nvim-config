@@ -10,7 +10,9 @@ vim.keymap.set("n", "<Space>", "<Nop>", { silent = true })
 vim.keymap.set("v", "<Space>", "<Nop>", { silent = true })
 
 -- Fast quit
-vim.keymap.set("n", "<leader>qq", ":qa<CR>", {})
+vim.keymap.set("n", "<F1>", "<cmd>qa<CR>", { desc = "Quit all safely" })
+vim.keymap.set("n", "<F5>", "<cmd>wqa<cr>", { desc = "Write and quit all" })
+vim.keymap.set("n", "<enter>", "<cmd>w<cr>", { desc = "Write buffer" })
 
 vim.keymap.set("n", "<leader>xe", vim.diagnostic.open_float, { desc = "Show floating diagnostic" })
 
@@ -46,3 +48,13 @@ vim.keymap.set(
 	":vertical resize +2<CR>",
 	{ noremap = true, desc = "Resize window right", silent = true }
 )
+
+-- Autosave
+vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost" }, {
+	pattern = "*",
+	callback = function()
+		if vim.bo.modified and vim.bo.modifiable then
+			vim.cmd("silent! write")
+		end
+	end,
+})
