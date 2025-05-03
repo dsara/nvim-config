@@ -12,7 +12,7 @@ return {
     lazygit = { enabled = true, configure = true },
     indent = { enabled = true },
     input = { enabled = true },
-    notifer = {
+    notifier = {
       enabled = true,
       timeout = 5000,
     },
