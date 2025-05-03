@@ -27,6 +27,6 @@ return {
       -- Has a conflict with which-key to trigger properly, https://github.com/mvllow/modes.nvim?tab=readme-ov-file#known-issues
       require('modes').setup()
     end,
-    enabled = true,
+    enabled = false,
   },
 }
