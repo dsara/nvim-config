@@ -23,6 +23,7 @@ return {
 				ts_ls = {},
 				bashls = {},
 				jsonls = {},
+				rust_analyzer = {},
 			},
 		},
 		config = function(_, opts)

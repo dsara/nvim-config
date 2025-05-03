@@ -12,10 +12,11 @@ return {
 				graphql = { "prettierd", "prettier", stop_after_first = true },
 				java = { "google-java-format" },
 				kotlin = { "ktlint" },
-				html = { "htmlbeutifier" },
+				html = { "htmlbeautifier" },
 				bash = { "beautysh" },
 				sh = { "shfmt" },
 				xml = { "xmlformatter" },
+				rust = { "rustfmt" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
