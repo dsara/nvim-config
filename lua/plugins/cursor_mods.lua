@@ -29,4 +29,8 @@ return {
     end,
     enabled = false,
   },
+  {
+    'mawkler/modicator.nvim',
+    config = function() require('modicator').setup() end,
+  },
 }
