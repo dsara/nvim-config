@@ -2,10 +2,10 @@ vim.cmd('set expandtab')
 vim.cmd('set tabstop=2')
 vim.cmd('set softtabstop=2')
 vim.cmd('set shiftwidth=2')
-vim.cmd('set number')
-vim.cmd('set textwidth=100')
 vim.cmd('set colorcolumn=+2')
-vim.cmd('set cursorline')
+vim.opt.textwidth = 100
+vim.opt.number = true
+vim.opt.cursorline = true
 vim.opt.termguicolors = true
 -- Space leader key and remove default functionality
 vim.g.mapleader = ' '
