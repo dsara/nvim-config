@@ -64,7 +64,7 @@ return {
 		config = function()
 			vim.cmd.colorscheme("rose-pine")
 		end,
-		enabled = false,
+		enabled = true,
 	},
 	{
 		"embark-theme/vim",
@@ -84,11 +84,11 @@ return {
 			vim.opt.background = "dark"
 			vim.cmd.colorscheme("tundra")
 		end,
-		enabled = true,
+		enabled = false,
 	},
 	{
 		"EdenEast/nightfox.nvim",
 		lazy = false,
-		enabled = true,
+		enabled = false,
 	},
 }

@@ -4,7 +4,7 @@ return {
 	opts = {},
 	dependencies = {
 		"MunifTanjim/nui.nvim",
-		"rcarriga/nvim-notify",
+		-- "rcarriga/nvim-notify",
 	},
 	config = function()
 		require("noice").setup({
@@ -23,9 +23,9 @@ return {
 				lsp_doc_border = false, -- add a border to hover docs and signature help
 			},
 		})
-		require("notify").setup({
-			background_colour = "#000000",
-		})
+		-- require("notify").setup({
+		-- 	background_colour = "#000000",
+		-- })
 		require("telescope").load_extension("noice")
 
 		vim.keymap.set(

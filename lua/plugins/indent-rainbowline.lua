@@ -16,5 +16,6 @@ return {
 		opts = {
 			indent = { enabled = true },
 		},
+		enabled = false,
 	},
 }

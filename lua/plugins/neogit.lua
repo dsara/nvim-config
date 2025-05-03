@@ -8,4 +8,5 @@ return {
 	config = function()
 		vim.keymap.set("n", "<leader>gn", ":Neogit<CR>", { desc = "Opens neogit", silent = true })
 	end,
+	enabled = false,
 }
