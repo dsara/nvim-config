@@ -7,6 +7,8 @@ vim.opt.textwidth = 100
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = 'number'
 -- Space leader key and remove default functionality
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<Space>', '<Nop>', { silent = true })
