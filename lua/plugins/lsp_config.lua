@@ -22,6 +22,7 @@ return {
         bashls = {},
         jsonls = {},
         rust_analyzer = {},
+        fish_lsp = {},
       },
     },
     config = function(_, opts)
