@@ -15,9 +15,8 @@ vim.keymap.set('n', '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('v', '<Space>', '<Nop>', { silent = true })
 
 -- Fast quit
-vim.keymap.set('n', '<F1>', '<cmd>qa<CR>', { desc = 'Quit all safely' })
-vim.keymap.set('n', '<F5>', '<cmd>wqa<cr>', { desc = 'Write and quit all' })
-vim.keymap.set('n', '<enter>', '<cmd>w<cr>', { desc = 'Write buffer' })
+vim.keymap.set('n', '<leader>qq', '<cmd>qa<CR>', { desc = 'Quit all safely' })
+vim.keymap.set('n', '<leader>qw', '<cmd>wqa<cr>', { desc = 'Write and quit all' })
 
 vim.keymap.set('n', '<leader>xe', vim.diagnostic.open_float, { desc = 'Show floating diagnostic' })
 
