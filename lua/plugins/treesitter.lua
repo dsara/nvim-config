@@ -1,3 +1,4 @@
+-- PARTIAL - Added package; no config or build task
 return {
   {
     'nvim-treesitter/nvim-treesitter',

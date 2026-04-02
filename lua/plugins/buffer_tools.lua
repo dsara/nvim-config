@@ -1,8 +1,10 @@
+-- MOVED
 return {
   -- Current buffer minimap
   {
     'Isrothy/neominimap.nvim',
     version = 'v3.x.x',
+    enabled = false,
     lazy = false,
     keys = {
       { '<leader>mmt', '<cmd>Neominimap toggle<cr>', desc = 'Toggle global minimap' },

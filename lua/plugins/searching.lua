@@ -1,3 +1,4 @@
+-- MOVED
 return {
   -- Telescope tool and associated plugins
   {
