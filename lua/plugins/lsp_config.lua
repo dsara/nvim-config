@@ -31,6 +31,8 @@ return {
         vim.lsp.config(server, config)
       end
 
+      vim.diagnostic.config({ virtual_text = true })
+
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Signature info (LSP)' })
       vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Signature help (LSP)' })
       vim.keymap.set('n', 'gD', vim.lsp.buf.definition, { desc = 'Goto definition (LSP)' })

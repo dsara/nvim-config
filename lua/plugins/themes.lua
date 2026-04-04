@@ -1,4 +1,3 @@
--- MOVED
 return {
   {
     'Shatur/neovim-ayu',

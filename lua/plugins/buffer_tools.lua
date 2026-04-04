@@ -1,4 +1,3 @@
--- MOVED
 return {
   -- Current buffer minimap
   {
