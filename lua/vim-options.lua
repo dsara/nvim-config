@@ -20,3 +20,10 @@ opt.swapfile = false
 opt.ignorecase = true
 opt.shiftround = true
 opt.background = 'dark'
+
+-- word wrapping options
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+-- vim.opt.breakindentopt = 'shift:2,min:20'
+vim.opt.showbreak = '↳ '

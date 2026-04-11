@@ -9,6 +9,20 @@ vim.keymap.set('n', '<leader>qw', '<cmd>wqa<cr>', { desc = 'Write and quit all' 
 
 vim.keymap.set('n', '<leader>xe', vim.diagnostic.open_float, { desc = 'Show floating diagnostic' })
 
+-- Next/Previous "line" when line wrapping occurring
+vim.keymap.set(
+  'n',
+  'j',
+  function() return tonumber(vim.api.nvim_get_vvar('count')) > 0 and 'j' or 'gj' end,
+  { expr = true, silent = true }
+)
+vim.keymap.set(
+  'n',
+  'k',
+  function() return tonumber(vim.api.nvim_get_vvar('count')) > 0 and 'k' or 'gk' end,
+  { expr = true, silent = true }
+)
+
 -- Remove highlights until next search
 vim.keymap.set(
   'n',
