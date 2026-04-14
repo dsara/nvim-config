@@ -23,6 +23,7 @@ return {
         jsonls = {},
         rust_analyzer = {},
         fish_lsp = {},
+        tombi = {},
       },
     },
     config = function(_, opts)
