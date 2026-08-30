@@ -24,6 +24,7 @@ return {
         rust_analyzer = {},
         fish_lsp = {},
         tombi = {},
+        terraformls = { filetypes = { 'terraform', 'hcl' } },
       },
     },
     config = function(_, opts)
